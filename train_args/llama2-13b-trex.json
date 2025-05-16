@@ -1,0 +1,33 @@
+{
+    "output_dir": "./output/llama2-13b-trex",
+    "model_name_or_path": "llama2-13b_model_path",
+    "train_file": "./datasets/combination_with_nomic-embed-text-v1.parquet",
+    "template_name": "llama2",
+    "per_device_train_batch_size": 4,
+    "gradient_accumulation_steps": 8,
+    
+    "num_train_epochs": 3,
+    "train_mode": "lora",
+    "learning_rate": 5e-5,
+    "max_seq_length": 2048,
+    "logging_steps": 100,
+    "save_steps": 10000,
+    "save_total_limit": 1,
+    "lr_scheduler_type": "cosine",
+    "warmup_steps": 100,
+    "lora_rank": 32,
+    "lora_alpha": 16,
+    "lora_dropout": 0.00,
+
+    "gradient_checkpointing": true,
+    "disable_tqdm": false,
+    "optim": "paged_adamw_32bit",
+    "seed": 42,
+    "fp16": true,
+    "report_to": "tensorboard",
+    "dataloader_num_workers": 0,
+    "save_strategy": "epoch",
+    "weight_decay": 0,
+    "max_grad_norm": 0.3,
+    "remove_unused_columns": false
+}
