@@ -1,4 +1,8 @@
-# Trex
+# T-REX: Mixture-of-Rank-One-Experts with semantic-aware Intuition for Multi-task Large Language Model Finetuning
+![Python 3.9](https://img.shields.io/badge/Python-3.9-red)
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/pdf/2405.16486)
+
+<img src="trex.png"/>
 
 ## Environment Setup
 
