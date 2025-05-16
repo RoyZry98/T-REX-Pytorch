@@ -58,7 +58,5 @@ bash trex_train.sh
 ```bash
 bash trex_eval.sh
 ```
-bash trex_eval.sh
-```
 
 
